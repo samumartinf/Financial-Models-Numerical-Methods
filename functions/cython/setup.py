@@ -18,12 +18,12 @@ import numpy
 
 
 setup(
-    ext_modules = cythonize("cython_functions.pyx", language_level='3'),
+    ext_modules = cythonize("cython_functions.pyx", language_level=3),
     include_dirs = [numpy.get_include()]
 )
 
 
 setup(
-    ext_modules = cythonize("cython_Heston.pyx", language_level='3'),
+    ext_modules = cythonize("cython_Heston.pyx", language_level=3),
     include_dirs = [numpy.get_include()]
 )
